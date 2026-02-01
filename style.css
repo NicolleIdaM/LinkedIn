@@ -1,4 +1,4 @@
-:root{
+:root {
   --fundo-escuro: #000;
   --fundo-card: #1d2226;
   --fundo-card-ativo: hsla(0, 0%, 100%, 0.12);
@@ -8,4 +8,70 @@
   --input: #38434F;
   --primario: #70b5f9;
   --positivo: #3ec786;
+}
+
+body {
+  background-color: var(--fundo-escuro);
+  padding: 0px 32px;
+  gap: 16px;
+}
+
+/*HEADER/NAVBAR*/
+header {
+  background-color: var(--fundo-card);
+  color: var(--texto-principal);
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 24px;
+  justify-content: center;
+}
+
+.linkedin{
+  font-size: 34px;
+}
+
+.search-bar{
+  background-color: var(--input);
+  outline: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+
+input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: var(--texto-principal);
+  padding: 0;
+  color: var(--texto-principal);
+}
+
+.button-icon {
+  font-size: 16px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 7px 10px 7px 100px;
+  border-right: 1px solid var(--texto-secundario);
+  gap: 8px
+}
+
+.button-links {
+  background-color: transparent;
+  color: var(--texto-principal);
+  border: solid 0px;
+  cursor: pointer;
+  padding: 0px 10   px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*MAIN/BODY*/
+.content{
+  background-color: var(--fundo-card);
 }
