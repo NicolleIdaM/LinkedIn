@@ -73,7 +73,7 @@ input {
   align-items: center;
 }
 
-/*MAIN/BODY*/
+/*MAIN AND SIDES*/
 main {
   display: flex;
   gap: 16px;
@@ -148,6 +148,46 @@ main {
   line-height: 20px;
 }
 
+/*LIKES AND COMENTS*/
+.likes-coments {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+  padding: 4px 3px;
+  justify-content: space-between;
+}
+
+.cicle-likes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  margin-left: 12px;
+}
+
+.blue, .green, .orange {
+  margin-left: -12px;
+  font-size: 16px;
+}
+
+.blue {
+  color: var(--primario);
+}
+
+.green {
+  color: var(--positivo);
+}
+
+.orange {
+  color: #DF704D;
+}
+
 /**/
 .profile-section {
   margin-top: -90px;
@@ -218,8 +258,15 @@ main {
   color: var(--primario);
 }
 
+#see-more-activities {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--texto-secundario);
+  margin-top: 0;
+}
+
 #message-button,
-#more-button {
+#more-button, #see-more-activities {
   border-radius: 16px;
   height: 32px;
   font-family: 'Roboto', sans-serif;
@@ -270,9 +317,13 @@ main {
 
 #publi-text,
 #legend {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
   width: 100%;
   min-width: 0;
 }
@@ -291,40 +342,29 @@ main {
   color: var(--texto-principal);
 }
 
-.likes-coments {
+/*ACTIVITIES*/
+.activities {
+  display: flex;
+  padding: 16px 24px;
+  gap: 8px;
+}
+
+.activity-post {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: solid 1px var(--texto-secundario);
+}
+
+.background-act{  
+  border-radius: 8px;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.activity-legend{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 20px;
-  padding: 4px 3px;
-  justify-content: space-between;
-}
-
-.cicle-likes{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 4px;
-}
-
-.circles {
-  display: flex;
-  flex-direction: row;
-  margin-left: 12px;
-}
-
-.blue, .green, .orange {
-  margin-left: -12px;
-}
-
-.blue {
-  color: var(--primario);
-}
-
-.green {
-  color: var(--positivo);
-}
-
-.orange {
-  color: #DF704D;
+  gap: 8px;
 }
