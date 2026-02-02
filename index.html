@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -59,16 +64,47 @@
     </header>
 
     <main>
-        <div>
+        <div class="left-side">
             <div class="content">
-                <div>
-                    <i class="fa-solid fa-house button-icon"></i>
-                    <typography>Home</typography>
-                </div>
-                <div>
-
+                <img src="./assets/Background.png" alt="Background Profile" class="background-profile">
+                <img src="https://github.com/NicolleIdaM.png" alt="Profile Picture" class="profile-picture">
+                <div class="profile-section">
+                    <div class="profile-info">
+                        <typography id="name" class="">Nicolle Ida</typography>
+                        <typography id="hard-skills" class="">Desenvolvedora | HTML | CSS | Typescript | Node
+                        </typography>
+                        <typography id="about" class="style-text">Fala sobre #javascript, #frontend, #reactjs, e
+                            #backend</typography>
+                        <div class="text-info">
+                            <typography id="location" class="style-text">Cidade, estado e país</typography>
+                            <typography id="separator" class="style-text">·</typography>
+                            <typography id="contact-info" class="style-text">informações de contato</typography>
+                        </div>
+                        <div class="text-info">
+                            <typography id="followers" class="style-text">??? seguidores</typography>
+                            <typography id="separator" class="style-text">·</typography>
+                            <typography id="connections" class="style-text">??? conexões</typography>
+                        </div>
+                        <div class="buttons-profile">
+                            <button id="message-button">Message</button>
+                            <button id="more-button">More</button>
+                        </div>
+                    </div>
+                    <div class="profile-education">
+                        <div class="be-item">
+                            <img src="./assets/Business.png" alt="Business" class="be-image">
+                            <typography class="be-text">Business</typography>
+                        </div>
+                        <div class="be-item">
+                            <img src="./assets/Education.png" alt="Education" class="be-image">
+                            <typography class="be-text">Education</typography>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
+
             <div class="content">
 
             </div>
@@ -89,7 +125,7 @@
             </div>
         </div>
         <div>
-            <div class="right-side">
+            <div class="right-side content">
 
             </div>
         </div>
