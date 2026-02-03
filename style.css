@@ -10,12 +10,18 @@
   --positivo: #3ec786;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--fundo-escuro);
   display: flex;
   flex-direction: column;
-  padding: 0px 48px;
   gap: 16px;
+  padding: 0px 0px 61px 0px;
 
   font-family: 'Roboto', sans-serif;
 }
@@ -28,6 +34,7 @@ header {
   align-items: center;
   padding: 7px 8px;
   justify-content: center;
+  margin-top: 0;
 }
 
 .linkedin {
@@ -58,7 +65,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 7px 10px 7px 100px;
+  padding: 0px 10px 0px 100px;
   border-right: 1px solid var(--texto-secundario);
   gap: 8px
 }
@@ -68,7 +75,7 @@ input {
   color: var(--texto-principal);
   border: solid 0px;
   cursor: pointer;
-  padding: 0px 10 px;
+  padding: 0px 0px;
 
   display: flex;
   flex-direction: column;
@@ -86,15 +93,14 @@ main {
 .left-side {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
   width: 780px;
 }
 
 .right-side {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  width: 320px;
+  gap: 8px;
 }
 
 /*IMAGES*/
@@ -438,3 +444,61 @@ main {
 }
 
 /*EDUCATION*/
+.education{
+  display: flex;
+  padding: 16px 24px;
+  gap: 8px;
+}
+
+.languages{
+  display: flex;
+  padding: 16px 24px;
+  gap: 8px;
+}
+
+.people{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 16px 24px 16px 16px;
+  gap: 16px;
+}
+
+.people-name{
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--texto-principal);
+}
+
+.people-text{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#people-button{
+  border-radius: 16px;
+  height: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  width: 154px;
+  background-color: transparent;
+  border: solid 2px var(--texto-principal);
+  color: var(--texto-principal);
+  font-weight: 600;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.divider-vert{
+  border-top: solid 2px var(--texto-secundario); /* Linha horizontal no TOPO */
+  width: 100%;
+  height: 0;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
